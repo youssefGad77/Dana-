@@ -1,0 +1,26 @@
+﻿<Page x:Class="DesktopProject.LogIn"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DesktopProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="500"
+      Title="LogIn" >
+
+    <Grid Background="#FFC5C5C5">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="LOG IN" Margin="189,10,211,124" FontWeight="Bold" FontSize="25" FontFamily="Segoe UI Black" />
+        <Label Content="Email :" Margin="36,106,371,31" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Password :" Margin="17,10,364,127" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
+        <TextBox x:Name="txtpass" HorizontalAlignment="Left" Margin="134,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="166" Height="37" Grid.Row="1"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="134,107,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="166" Height="37"/>
+        <Button Content="Log In" HorizontalAlignment="Left" Margin="99,120,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86" Height="32" FontWeight="Bold" FontSize="17" Foreground="White" Background="Black" Click="Button_Click"/>
+        <Button Content="Sign Up" HorizontalAlignment="Left" Margin="250,120,0,0" Grid.Row="1" VerticalAlignment="Top" Width="86" Height="32" FontWeight="Bold" FontSize="17" Foreground="White" Background="Black" Click="SignUpButton"/>
+
+
+    </Grid>
+</Page>
